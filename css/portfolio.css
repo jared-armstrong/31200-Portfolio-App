@@ -3,7 +3,8 @@
 }
 
 .cardInfo {
-    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .accordion {
@@ -12,5 +13,38 @@
 }
 
 .experiences {
-    width: 200px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expHeading, .qualifications {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.thirdCol {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+a {
+    color: white;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
 }

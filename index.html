@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Lab</title>
+    <title>Jared Armstrong Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/profile-picture.png">
 
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -17,6 +18,7 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/header.css">
 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -30,6 +32,21 @@
 <body>
     
     <!-- Header -->
+
+    <nav>
+        <div class='navgrid'>
+            <a><img src='assets/icons8-portfolio-96.png' alt='Portfolio Image'></a>
+            <h1>Jared Armstrong E-Portfolio</h1>
+        </div>
+        <div class='hamburger-menu'>
+            <input id='menu__toggle' type='checkbox' />
+            <label class='menu__btn' for='menu__toggle'>
+                <span></span>
+            </label>
+            <ul class='menu__box'>
+            </ul>
+        </div>
+    </nav>
 
 
     <div class="mainContainer container-fluid">
@@ -176,13 +193,119 @@
             <!-- Carousel of Experiences (images), button with link to GitHub and tooltip -->
             <div class="col experiences">
 
-                <h5>Hello</h5>
+                <h3 class="expHeading">My Experiences</h3>
+
+                <div 
+                    id="course_carousel"
+                    class="carousel carousel-area bg-body bg-gradient carousel-light"
+                    data-bs-ride="carousel"
+                    data-bs-interval="2000">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img
+                                class="d-block w-100"
+                                src="assets/lids.jpg"
+                                alt="Lids Logo"
+                            />
+                            <div class="carousel-caption">
+                                <p>IT Intern Summer 2022</p>
+                                <p>Data Integrity Intern Spring 2023</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="assets/pearson-logo.png"
+                                alt="Pearson Logo"
+                                
+                            />
+                            <div class="carousel-caption">
+                                <p>Pearson Campus Ambassador: Spring 2020 - May 2023 <br> Software Engineering Intern: Fall 2021 - Spring 2022</p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#course_carousel"
+                            data-bs-slide="prev">
+                            <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true">
+                            </span>
+                            <span
+                                class="visually-hidden">
+                                Previous
+                            </span>
+                        </button>
+
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#course_carousel"
+                            data-bs-slide="next">
+
+                            <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="visually-hidden">Next</span>
+
+                        </button>
+
+                        <div class="carousel-indicators">
+                            <button
+                                type="button"
+                                data-bs-target="#course-carousel"
+                                data-bs-slide-to="0"
+                                class="active"
+                            ></button>
+                            <button
+                                type="button"
+                                data-bs-target="#course-carousel"
+                                data-bs-slide-to="1"
+                            ></button>
+                        </div>
+                    </div>
+                <!-- End of carousel -->
+
+            </div>
 
             </div>
 
             <!-- Qualifications in a List Group, LinkedIn button -->
-            <div>
+            <div class="col thirdCol">
+                <h3 class="qualifications">Qualifications</h3>
 
+                <ul class="list-group">
+                    <li class="list-group-item">B.S. Computer Information & Technology</li>
+                    <li class="list-group-item">Web Development Certificate</li>
+                    <li class="list-group-item">Minor in Applied Computer Science</li>
+                    <li class="list-group-item">Artificial Intelligence CRT</li>
+                </ul>
+
+                <button 
+                    class="btn btn-md btn-primary d-block m-4"
+                    data-bs-container="body"
+                    data-bs-toggle="popover"
+                    data-bs-placement="right"
+                    title="Connect with me on LinkedIn"
+                    data-bs-content="https://www.linkedin.com/in/jared-armstrong-976a01181/">
+                    <span> <i class="bi bi-linkedin"></i></span>
+                    <span>LinkedIn</span>
+                </button>
+
+                <button
+                    class="btn btn-md btn-primary d-block m-4"
+                    data-bs-container="body"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="GitHub Repos">
+                    <span> <i class="bi bi-github"></i></span>
+                    <span><a href="https://github.com/jared-armstrong?tab=repositories" target="_blank">Public GitHub</a></span>
+                </button>
             </div>
 
         </div>
